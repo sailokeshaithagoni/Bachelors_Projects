@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.emergency.button"
+      android:versionCode="7"
+      android:versionName="1.5"
+      >
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".EmergencyButtonActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.Main"
+                  android:launchMode="singleInstance"
+                  android:windowNoTitle="true"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EmergencyActivity"
+                  android:label="@string/sending_name"
+                  android:theme="@style/Theme.EmergencyActivity"
+                  android:launchMode="singleInstance"
+                  >
+        </activity>
+
+        <activity android:name=".IntroActivity"
+                  android:label="@string/intro_name"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:launchMode="singleInstance"
+                  >
+        </activity>
+
+		<!-- Broadcast Receiver that will process AppWidget updates -->
+		<receiver android:name=".EmergencyWidgetProvider" android:label="@string/widget_name">
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		    </intent-filter>
+		    <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget" />
+		</receiver>
+		
+		<!-- Service to perform web API queries 
+		<service android:name=".EmergencyButton$UpdateService" />-->    
+    </application>
+    
+    
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest> 

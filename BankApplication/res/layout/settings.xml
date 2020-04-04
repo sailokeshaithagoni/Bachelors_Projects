@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#6699cc"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textSize="26sp"
+        android:textColor="#2447A7"
+        android:text="Settings" />
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="hkgkdhjf"
+        android:inputType="textPersonName" 
+         android:background="@drawable/broderframe">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/uPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uName"
+        android:layout_alignRight="@+id/uName"
+        android:layout_below="@+id/uName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="hgsgkgsf"
+        android:inputType="textPersonName" 
+         android:background="@drawable/broderframe"/>
+
+    <EditText
+        android:id="@+id/uCnfPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uPass"
+        android:layout_alignRight="@+id/uPass"
+        android:layout_below="@+id/uPass"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="hkfdjha"
+        android:inputType="textPersonName"
+         android:background="@drawable/broderframe" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/uCnfPass"
+        android:layout_below="@+id/uCnfPass"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/button_bl"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/sback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/update"
+        android:layout_alignBottom="@+id/update"
+        android:layout_alignLeft="@+id/uCnfPass"
+        android:background="@drawable/button_bl"
+        android:textColor="#ffffff"
+        android:text="Back" />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#6699cc"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        
+        android:text="Transfore" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="29dp"
+        android:text="TotalAmount" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="48dp"
+        android:textColor="#ffffff"
+         />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/totalAmount"
+        android:layout_marginTop="30dp"
+        android:text="HolderName" 
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/holderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/totalAmount"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@drawable/broderframe"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/holderName"
+        android:layout_marginTop="38dp"
+        android:text="Acc.Number" 
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/accNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/holderName"
+        android:layout_alignRight="@+id/holderName"
+        android:background="@drawable/broderframe"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tsubmit"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/totalAmount"
+        android:text="Amount"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/transfoerAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/accNumber"
+        android:layout_alignRight="@+id/accNumber"
+        android:background="@drawable/broderframe"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/tsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/transfoerAmount"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+                  android:textColor="#ffffff"
+          android:background="@drawable/button_bl"
+        android:text="submit" />
+
+</RelativeLayout>

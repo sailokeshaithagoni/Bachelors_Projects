@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainEmergencyView"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:background="#000000"
+	>
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+		
+		<LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/gps_maps"
+				/>
+			<ImageView
+		    	android:id="@+id/imgLocation"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical"
+				android:src="@drawable/x_or_v"
+				/>
+		    <TextView  
+		    	android:id="@+id/txtLocation"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent" 
+		        android:gravity="center_vertical"
+		        android:text="Getting Current Location"
+		        />     
+		</LinearLayout>
+	
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+			<ImageView   
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/textmessage"
+				/>
+			<ImageView
+		    	android:id="@+id/imgSMS"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical"
+				android:src="@drawable/x_or_v"
+				/>
+		    <TextView  
+		    	android:id="@+id/txtSMS"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent" 
+		        android:gravity="center_vertical"
+		        android:text="Sending SMS"
+		        android:paddingLeft="5px"
+		        />     
+		</LinearLayout>
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:weightSum="1.0"
+		    >
+			<Button
+			    android:id="@+id/btnConfigure"
+			    android:layout_weight="0.5"
+				android:layout_width="0dip"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+		        android:text="Configure"
+			    />
+		</LinearLayout>
+		    
+	</LinearLayout>
+</ScrollView>

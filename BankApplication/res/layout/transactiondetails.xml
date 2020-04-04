@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#6699cc"
+    >
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="#003366"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Banking" />
+    </LinearLayout>
+
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp" >
+
+            <TableLayout
+                android:id="@+id/dtable"
+                android:gravity="center"
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/broderframe" >
+                  <TableRow>
+
+                    <TextView
+                        android:text="Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"
+                        />
+
+                    <TextView
+                         android:text="AccountNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+
+                    <TextView
+                         android:text="AmountTransfore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+
+                    <TextView
+                         android:text="Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"
+                        />
+
+                    <TextView
+                        android:id="@+id/ac_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" 
+                        android:background="@drawable/broderframe"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bl" 
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

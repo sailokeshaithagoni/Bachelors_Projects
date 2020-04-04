@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#6699cc"
+     >
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="#003366"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Banking" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/balenceEnquiry"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:text="BalenceEnquery" 
+        android:textColor="#ffffff"
+          android:background="@drawable/button_bl"/>
+
+    <Button
+        android:id="@+id/TransforeFunds"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+                  android:textColor="#ffffff"
+          android:background="@drawable/button_bl"
+        android:text="TransforeFunds" />
+
+    <Button
+        android:id="@+id/ministatement"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="MiniStateMent"
+                  android:textColor="#ffffff"
+          android:background="@drawable/button_bl" />
+
+</LinearLayout>

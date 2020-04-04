@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+    >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingRight="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btnHelp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/question_small"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+            
+        <ImageButton
+            android:id="@+id/btnEmergency"
+            android:layout_width="227dp"
+            android:layout_height="231dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/old_btn" />
+
+        <LinearLayout 
+            android:id="@+id/linEmail"  
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            > 
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingRight="10dp"
+                >
+            </LinearLayout>
+       </LinearLayout>
+        
+       <!-- Note that the special padding for this TextView is to compensate for having no capital letters -->
+
+        <LinearLayout 
+            android:id="@+id/linPhoneNo"  
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_phone"
+                    />
+                <EditText 
+                    android:id="@+id/txtPhoneNo"  
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"        
+                    android:hint="SMS Number"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/linMessage"  
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_msg"
+                    />
+            <EditText 
+                android:id="@+id/txtMessage"  
+                android:hint="Message"
+                android:layout_width="fill_parent" 
+                android:layout_height="120px"
+                android:gravity="top"
+                />
+            </LinearLayout>
+        </LinearLayout> 
+         <LinearLayout 
+            android:id="@+id/linPhoneNo"  
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_phone"
+                    />
+                <EditText 
+                    android:id="@+id/txtPhoneNo1"  
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"        
+                    android:hint="Call Number"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+                  
+   
+        </LinearLayout>
+</ScrollView>
+

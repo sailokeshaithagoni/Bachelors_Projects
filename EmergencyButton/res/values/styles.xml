@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WidgetBackground">
+        <item name="android:background">@drawable/widget_bg_normal</item>
+    </style>
+
+	<style name="Theme" parent="android:Theme">
+	</style>
+	
+	<style name="Theme.Main">
+	    <item name="android:windowBackground" >@drawable/appbackground</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:colorForeground">#fff</item>
+	</style>
+	
+	<style name="Theme.EmergencyActivity">
+	    <item name="android:windowBackground" >@drawable/appbackground</item>
+	    <item name="android:colorForeground">#fff</item>
+	</style>
+
+	<style name="Theme.IntroActivity">
+		<item name="@android:style/Theme.Dialog"></item>
+	    <item name="android:colorForeground">#fff</item>
+	</style>
+
+</resources>

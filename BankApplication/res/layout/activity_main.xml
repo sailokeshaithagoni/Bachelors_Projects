@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#6699cc"
+     >
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="#003366"
+    >
+
+    <TextView
+        android:id="@+id/loginHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+         android:textColor="#ffffff"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+        android:textSize="26sp"
+        android:text="Login" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/user_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="UserName"
+        android:gravity="center"
+        android:inputType="textPersonName" 
+        android:background="@drawable/broderframe">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:background="@drawable/broderframe" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:text="@string/submit" 
+        android:textColor="#ffffff"
+          android:background="@drawable/button_bl"/>
+
+  
+
+</LinearLayout>
